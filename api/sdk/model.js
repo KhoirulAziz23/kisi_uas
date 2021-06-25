@@ -10,13 +10,11 @@ function normalized(data){ // x,y,z
 }
 
 function denormalized(data){
-    v = (data[0] * 552.6264) + 650.4795
-    p = (data[1] * 12153.8) + 10620.5615
-    return [v, p]
     
     m1 = (data[0] * 32.59359793) + 10.339
     m2 = (data[1] * 30.54807165) + 9.805
     m3 = (data[2] * 31.36414005) + 10.153
+    return [m1,m2,m3]
 }
 
 
